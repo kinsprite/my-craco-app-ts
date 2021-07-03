@@ -46,8 +46,13 @@
     ]
   },
   "devDependencies": {
+    "craco-alias": "^3.0.1",
+    "craco-sass-resources-loader": "^1.1.0",
+    "deepmerge": "^4.2.2",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "prettier": "^2.3.1"
+    "prettier": "^2.3.1",
+    "react-app-rewire-typings-for-css-module": "^4.0.3",
+    "sass": "^1.35.1"
   }
 }
