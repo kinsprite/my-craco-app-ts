@@ -1,21 +1,17 @@
-function applyPolyfill() {
-  const promise: any[] = [];
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-  if (!window.Set) {
-    promise.push(import('core-js/es/map'), import('core-js/es/set'));
-  }
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root'),
+);
 
-  if (!window.requestAnimationFrame) {
-    promise.push(import('raf').then(res => res.polyfill()));
-  }
-
-  if (!window.fetch) {
-    promise.push(import('whatwg-fetch'));
-  }
-
-  return Promise.all(promise);
-}
-
-applyPolyfill().then(() => import('./indexStart'));
-
-export {};
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals(console.log);
