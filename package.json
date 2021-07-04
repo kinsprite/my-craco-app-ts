@@ -36,6 +36,13 @@
   "browserslist": {
     "production": [
       ">0.2%",
+      "android >= 4.3",
+      "ios_saf >= 7",
+      "chrome >= 42",
+      "safari >= 6.1",
+      "edge >= 12",
+      "ff >= 15",
+      "ie >= 9",
       "not dead",
       "not op_mini all"
     ],
